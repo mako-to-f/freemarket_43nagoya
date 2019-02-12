@@ -22,7 +22,11 @@ Rails.application.routes.draw do
     resource :identification
     resource :profile
   end
+<<<<<<< HEAD
   resources :products, only: [:index, :new, :show, :edit, :update] do
+=======
+  resources :products, only: [:index, :new, :show, :create] do
+>>>>>>> add_model_of_User_and_Product
     collection do
       get 'list'
     end
